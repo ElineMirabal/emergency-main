@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,18 +14,23 @@
   <link rel="stylesheet" href="css/cards.css" />
   <link rel="stylesheet" href="css/forms.css" />
   <link rel="icon" type="image/png" href="img/fav.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+    rel="fonts">
   <title>Emergency Site</title>
 </head>
+
 
 <body id="register">
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> MADENS BESKYTTELSE </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><button id="toggle-btn"></button></li>
+        <li><a class="menuItem" href="instruction.html">De bedste råd </a></li>
+        <li><a class="menuItem" href="register.html">Book redningsmand </a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -74,9 +79,9 @@
           <div class="form-group">
             <select id="køn-select">
               <option value="">--Vælg køn--</option>
-              <option value="dog">Dame</option>
-              <option value="cat">Mand</option>
-              <option value="hamster">Nonbinær</option>
+              <option value="dame">Dame</option>
+              <option value="mand">Mand</option>
+              <option value="nonbinær">Nonbinær</option>
             </select>
           </div>
 
@@ -140,6 +145,8 @@
     </nav>
   </footer>
   <script src="js/burger.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/darkmode.js"></script>
   <!-- <script src="js/main.js"></script> -->
 </body>
 

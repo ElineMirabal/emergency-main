@@ -1,119 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
+<html lang="da">
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/infographic.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+    rel="fonts">
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> MADENS BESKYTTELSE </a>
+      </div>
+      <ul class="menu">
+        <li><button id="toggle-btn"></button></li>
+        <li><a class="menuItem" href="instruction.html">De bedste råd </a></li>
+        <li><a class="menuItem" href="register.html">Book redningsmand</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <div class="grid">
+        <img src="img/logoMB.svg" alt="logo" />
+      </div>
+      <div>
+        <h1> Kommer du også tit galt afsted når du laver mad?</h1>
+        <p class="sub"> Madens Beskyttelse er til dig der af og til brænder din mad på, eller står i en situation hvor
+          du har fået tabt det på gulvet og eller har fået lavet en dårlig middag og står og mangler hjælp og råd til at
+          redde sin situation. For vi ved jo alle hvor tæls det er at stå og enten skulle servere mad til nogen eller
+          til en selv og man er nødt til at have en nødplan så ikke man skal starte helt forfra.</p>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="img/tabttearte.svg" alt="tabttearte" />
+        <div class="daily_text">
+          <h2>Bedste råd fra Madens beskyttelse</h2>
+          <p>
+            De bedste råd fra madens beskyttelse! Hvad er godt at vide for at undgå at spilde sin mad???
+          </p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="img/tabtpizza.svg" alt="tabtpizza" />
+        <div class="daily_text">
+          <h2>Står du og mangler redningsmanden, til at fikse dit rodede køkken?</h2>
+          <p>
+            Det skulle bare have været en hyggelig tirsdag aften. En simpel pastaret, et glas vin, lidt musik i
+            baggrunden. Men et enkelt telefonopkald blev til ti minutter – og da røgalarmen begyndte at skrige, var det
+            allerede for sent... Men så lød der et bank på døren...
+            Redningsmanden var på vej.
+          </p>
+          <a href="register.html" class="cta_btn">Book ham her</a>
+        </div>
+      </article>
+    </section>
+
+
+
+
+
+    <section id="breaking">
+      <article class="news_card">
+        <h3>Han reddede aftenen!</h3>
+        <p>"Det hele begyndte en helt almindelig torsdag, hvor Mikkel havde besluttet sig for at imponere sig selv
+          med en hjemmelavet chili con carne. Han havde set fire YouTube-videoer og følte sig næsten som en
+          professionel kok. Ingredienserne var snittet, gryden stod og simrede, og duften begyndte faktisk at blive
+          lovende...." - Jonna Larsen</p>
+        <img src="img/køkken.webp" alt="news_img" />
+
+        <!--*****************************Dialogbox*********************************-->
+
+        <dialog id="dialog1">
+          <form method="dialog">
+            <h3>Han reddede aftenen!</h3>
+            <p>Det hele begyndte en helt almindelig torsdag, hvor Mikkel havde besluttet sig for at imponere sig selv
+              med en hjemmelavet chili con carne. Han havde set fire YouTube-videoer og følte sig næsten som en
+              professionel kok. Ingredienserne var snittet, gryden stod og simrede, og duften begyndte faktisk at blive
+              lovende.
+
+              Men så gjorde han det, man aldrig må gøre i et køkken:
+              Han tænkte, “jeg kan da lige nå at folde vasketøj imens.”
+
+              Fem minutter blev til ti. Ti blev til femten. Og pludselig — et svagt knæk, der lød som et løg der gav op,
+              efterfulgt af en dyb rumlen, som om gryden sukkede sit sidste suk.
+
+              Mikkel vendte sig mod køkkenet og så det:
+              En mørk, ondskabsfuld røgsky snoede sig op fra gryden som en slange på vej efter sit bytte. Røgalarmen
+              vågnede med et hyl, der kunne vække hele opgangen, og Mikkel kastede sig frem, men det var for sent.
+              Chilien var ikke bare brændt på — den var blevet til kul i sauceform.
+
+              Han stirrede på ødelæggelsen. Gryden var færdig. Komfuret lignede et mislykket vulkaneksperiment. Og en
+              stank så kraftig, at selv naboens kat løb hjem igen.
+
+              Mikkel satte sig ved køkkenbordet, helt stille.
+              Det var nu, i mørket af sit eget madmæssige nederlag, at han huskede et navn, hviskende fra en reklame han
+              engang havde set:
+
+              Redningsmanden.
+              Manden der ryddede op, når alt andet var gået galt.
+              Manden der trådte til, når maden havde opgivet ånden.
+              Manden der kom, når folk stod i køkkenkrisens dybeste afgrund.
+
+              Uden at tænke mere over det, greb Mikkel sin telefon. Tre tryk. En ringetone. Og en rolig stemme, der
+              næsten lød som et varmt tæppe:
+
+              “Redningsmanden. Hvordan kan jeg hjælpe?”
+
+              Da døren kort efter gik op, stod han der med sin genkendelige røde taske, et smil og en ro, der kunne
+              slukke enhver køkkenbrand — bogstaveligt talt.
+
+              På under tyve minutter var røg lugten væk, køkkenet skinnende, og Mikkel fik endda en lille pep-talk om at
+              holde sig til retter med lav risiko i en periode.
+
+              Da Redningsmanden gik igen, slog det Mikkel:
+              Det var måske ikke hans aften som kok…
+              Men det var en aften, han aldrig ville glemme.
+              - Mikkel Larsen</p>
+            <button id="close_btn">
+              Luk knap
+            </button>
+          </form>
+        </dialog>
+
+        <button class="cta_btn" id="cta_open1">Læs mere her</button>
+      </article>
+
+      <!--********************************Dialogbox2*************************************-->
+      <article class="news_card">
+        <h3>Professionel og hurtig!</h3>
+        <p>"Sofie havde haft en lang dag. En af de dér dage, hvor man starter med at spilde kaffe på sin skjorte og
+          slutter med at indse, at man har gået rundt med to forskellige sokker. Alt hvad hun ønskede nu, var en rolig
+          aften og en portion hjemmelavede frikadeller...." - Sofie Jensen</p>
+        <img src="img/breandtmad.webp" alt="news_img" />
+
+        <div popover id="news_popover">
+          <h3>Professionel og hurtig!</h3>
+          <p>Sofie havde haft en lang dag. En af de dér dage, hvor man starter med at spilde kaffe på sin skjorte og
+            slutter med at indse, at man har gået rundt med to forskellige sokker. Alt hvad hun ønskede nu, var en rolig
+            aften og en portion hjemmelavede frikadeller. Det var hendes trøstemad, og hun havde glædet sig hele vejen
+            hjem.
+
+            Hun tændte for komfuret, satte panden over og begyndte at forme de perfekte frikadeller. Duften bredte sig
+            hurtigt, og Sofie smilede for første gang hele dagen. Det her, tænkte hun, det skal nok rette op på alt.
+
+            Men så vibrerede hendes telefon med en besked fra hendes chef:
+            “Kan du nå at sende de filer i aften?”
+
+            Sofie sukkede.
+            Kun ét minut, tænkte hun. Bare lige et hurtigt svar.
+
+            Minuttet blev til fem.
+            Fem blev til ti.
+            Og pludselig lød der et hisssssss fra køkkenet, som om panden var blevet dybt fornærmet.
+
+            Sofie fór ud i køkkenet og stoppede op.
+            Synet var næsten poetisk — hvis poesi lugtede af brændt fars.
+
+            Pandens indhold var blevet forvandlet fra gyldne frikadeller til kulstykker, der mest lignede små
+            meteoritter. En af dem var endda hoppet over kanten og lå midt på gulvet som et faldet offer. Fedtsprøjt
+            dækkede ovnen, og røgen lavede sit eget lille skæringspunkt med loftet.
+
+            “Nej nej nej…” mumlede hun og viftede febrilsk med et viskestykke. Røgalarmen vågnede øjeblikkeligt og skreg
+            sin dom ud i hele lejligheden.
+
+            Sofie stod midt i kaosset og følte alt ramle sammen igen. Det var dér, hun huskede anbefalingen fra en ven:
+
+            Ring til Redningsmanden.
+            Han rydder op. Han ordner kaos.
+            Han har set alt.
+
+            Med et sidste blik på de kulforkullede kødboller tastede hun nummeret.
+
+            “Redningsmanden her,” lød det i den anden ende — så roligt, som om brændte frikadeller var en helt normal
+            torsdagsaktivitet.
+
+            Tjue minutter senere stod han i døren:
+            Arbejdsjakke, handsker, en effektivitet der kunne imponere enhver, og en duft af rengøringsmiddel, der
+            lovede frelse.
+
+            Han gik i gang uden at tøve. Røg væk. Pande afrenset. Ovn tørret. Gulv frit for meteoritter. Og Sofie? Hun
+            stod bare og så på, som om hun var vidne til et mirakel.
+
+            Da han var færdig, smilede han og sagde:
+            “Frikadeller er en klassiker. De skal nok lykkes næste gang.”
+
+            Sofie kunne ikke lade være med at grine.
+            For selvom aftensmaden var tabt, var dagen alligevel blevet reddet — af én mand, en sprayflaske og en ro,
+            der kunne temme selv de mest katastrofale køkkenoplevelser.</p>
+
+          <button popovertarget="news_popover">
+            Luk knap
+          </button>
+        </div>
+        <button popovertarget="news_popover">Læs mere her -></button>
+      </article>
+
+      <!--******************************Dialogbox3************************************-->
+
+      <article class="news_card">
+        <h3>Den bedste støtte i køkkenkaos!</h3>
+        <p>"Lars havde besluttet, at han ville imponere sin date med en hjemmelavet brunch. Alt skulle være perfekt:
+          pandekager, friskpresset juice… og selvfølgelig en fancy omelet med ost, tomat og basilikum." - Lars Jørgensen
+        </p>
+        <img src="img/pandebillede.webp" alt="news_img" />
+        <div popover id="news_popover2">
+          <h3>Den bedste støtte i køkkenkaos!</h3>
+          <p>Lars havde besluttet, at han ville imponere sin date med en hjemmelavet brunch. Alt skulle være perfekt:
+            pandekager, friskpresset juice… og selvfølgelig en fancy omelet med ost, tomat og basilikum.
+
+            Han startede med stort overblik, hakkede grøntsager og slog æggene ud med præcision. Men da han ville
+            tilføje lidt ekstra “flair”, fik han idéen at piske omeletten ekstra luftigt. Hvad kunne gå galt?
+
+            Meget, viste det sig.
+
+            Lars begyndte at tale med sin date om sine store fremtidsplaner, mens panden langsomt blev varmere.
+            Pludselig hørte han et POP!, efterfulgt af en lille eksplosion, der sendte æggeblanding op ad væggen, i
+            loftet og – værst af alt – over hans helt hvide skjorte.
+
+            Røgen begyndte at brede sig, og alarmen skreg som en sirene. Hans date stirrede med store øjne, og Lars stod
+            midt i køkkenet med det hele dækket i en grumset, halvt fast omeletmasse.
+
+            “Jeg tror… vi har brug for hjælp,” stammede han.
+
+            Og som om universet hørte hans bøn, ringede han til Redningsmanden.
+
+            Tyve minutter senere trådte han ind med et professionelt smil og en ro, der kunne få en tornado til at
+            slappe af. Med nogle hurtige bevægelser blev køkkenet ryddet, panden rengjort, væggene aftørret og alarmen
+            stilnet.
+
+            Da Redningsmanden gik, var omeletkatastrofen glemt. Lars’ date grinede stadig, men på en helt ny måde — ikke
+            af fejlene, men af lettelsen over, at nogen kunne redde dagen, selv når køkkenet lignede et bombet område.
+
+            Lars besluttede én ting den dag: næste gang, han ville imponere med mad, skulle han allierede sig med
+            Redningsmanden på forhånd. - Lars Jørgensen</p>
+
+          <button popovertarget="news_popover2">
+            luk knap
+          </button>
+        </div>
+        <button popovertarget="news_popover2"> Læs mere her-></button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/dialog.js"></script>
+  <script src="js/darkmode.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>

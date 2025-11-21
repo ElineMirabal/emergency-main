@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="css/cards.css" />
   <link rel="stylesheet" href="css/infographic.css" />
   <link rel="icon" type="image/png" href="img/fav.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+    rel="fonts">
   <title>Emergency Site</title>
 </head>
 
@@ -21,11 +24,12 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> MADENS BESKYTTELSE </a>
       </div>
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><button id="toggle-btn"></button></li>
+        <li><a class="menuItem" href="instruction.html">De bedste råd </a></li>
+        <li><a class="menuItem" href="register.html">Book redningsmand</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
@@ -36,8 +40,10 @@
   </header>
 
   <main>
-    <h1>INSTRUKTION</h1>
-    <p>Underoverskrift</p>
+    <h1> DE BEDSTE RÅD FRA MADENS BESKYTTELSE</h1>
+    <p>Madens beskyttelse har tre kerneråd vi altid bruger, når man står og har mistet det måltid man har brugt så
+      lang
+      tid på at lave.</p>
     <section class="info-graphic">
       <?xml version="1.0" encoding="UTF-8"?>
       <svg xmlns="http://www.w3.org/2000/svg" width="170.99mm" height="202.39mm" viewBox="0 0 484.71 573.71">
@@ -438,10 +444,13 @@
     </section>
 
     <section class="info-text">
-      <h2>Overskrift</h2>
+      <h2>De bedste råd fra madens beskyttelse</h2>
       <article>
         <p class="placeholder"> Hvad er godt at vide for at undgå at spilde sin mad?</p>
       </article>
+      <div class="logoinfo">
+        <img src="img/logoMB.svg" alt="logo">
+      </div>
       <aside id="efficiency" class="info-box hide">INFO-BOX</aside>
       <aside id="requirement" class="info-box hide">INFO-BOX</aside>
     </section>
@@ -473,8 +482,9 @@
       </ul>
     </nav>
   </footer>
+  <script src="js/burger.js"></script>
   <script src="js/main.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/darkmode.js"></script>
 </body>
 
 </html>

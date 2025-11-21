@@ -1,21 +1,29 @@
 :root {
+  color-scheme: light;
+  /*--color-brand: light-dark(#fffae2, #2d2d2d);
+  --color-text: light-dark(#2d2d2d, #fffae2);
+  --color-bg: light-dark(#fffae2, #2d2d2d);*/
+
+  color: var(--color-text);
+  background-color: var(--color-);
+
   /* Colours */
   --color-bg: #f7f6f5; /* page background /*
 
   /* Header */
-  --color-head-bg: #e7cd91;
+  --color-head-bg: light-dark(#a31c16, #798d6f);
 
   /* Logotype */
-  --color-logotype-bg: #e4c8e2;
+  --color-logotype-bg: #a31c16;
   --color-text-logotype: black;
   --font-logotype-size: 3rem;
 
   /* Global menu */
-  --color-menu-bg: #e4c8e2;
+  --color-menu-bg: #a31c16;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: light-dark (#e4c8e2, #78766e);
   --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
+  --color-link-active: #a31c16; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,27 +31,28 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #e2b76d;
-  --color-headline-text-page: black;
+  --color-headline-bg: light-dark (#e7cd91, #f8b73a);
+  --color-headline-text-page: white;
 
   /* Tekst */
-  --color-text: black;
-  --color-text-inverted: #cdccc4;
+  --color-text: light-dark(black, white);
+  --color-text-inverted: light-dark(black, white);
 
   /*  Marginer */
   --margin-head-bottom: 5px;
 
   /* Borders */
-  --border-radius: 5px;
+  --border-radius: 10px;
 
   /* Cards */
-  --color-card-bg: #798d6f;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: light-dark(#e4c8e2, #cccdc9);
+  --color-cta-card-bg: #a31c16;
+
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #e4c8e2;
-  --color-cta-newscard-bg: #e2b76d;
-  --color-cta-newscard-bg-inverted: #9d6fa0;
+  --color-news-bg: light-dark(#e7cd91, #f8b73a);
+  --color-news-bg-inverted: light-dark(#e7cd91, #f8b73a);
+  --color-cta-newscard-bg: #a31c16;
+  --color-cta-newscard-bg-inverted: #a31c16;
 
   /* Fonts */
   --font-family-sans: "Rubik";
@@ -51,7 +60,6 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 900;
-
   /* Text sizes */
   --logotype-size: 1rem;
   --headline1-size: 2rem;
@@ -63,7 +71,21 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #798d6f;
-  --color-infobox-1-bg: #798d6f;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#e7cd91, #f8b73a);
+  --color-infobox-1-bg: #a31c16;
+  --color-infobox-2-bg: light-dark(#e4c8e2, #cccdc9);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+#toggle-btn {
+  padding: 10px;
+  background: light-dark(#e7cd91, #f8b73a);
+  color: light-dark(black, white);
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  display: block;
+  border: none;
 }

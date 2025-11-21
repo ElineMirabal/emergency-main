@@ -52,7 +52,7 @@
   margin: 0 0 1rem 0;
 }
 .news_card:first-child:before {
-  content: "BREAKING NEWS";
+  content: "ANMELDELSER AF REDNINGSMANDEN";
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
   font-size: var(--font-h3-size);
@@ -60,6 +60,10 @@
   text-align: center;
   line-height: 1rem;
   padding: calc(1.1rem / 1.5) 0 calc(1.1rem / 2) 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 30px;
 }
 .news_card:first-child {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -80,6 +84,29 @@
   width: max-content;
   border-radius: var(--border-radius);
 }
+/***********************dialog********************/
+.cta_btn #close_btn {
+  border-radius: 10px;
+}
+
+.news_card #dialog1 {
+  padding: 50px;
+  margin: 50px;
+  gap: 20px;
+  background-color: white;
+  justify-self: center;
+  place-self: center;
+  border-radius: 10px;
+  border: none;
+  max-width: 600px;
+  color: black;
+  line-height: 2rem;
+}
+
+::backdrop {
+  backdrop-filter: blur(5px);
+}
+
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
@@ -90,4 +117,42 @@
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+/******************popover**************/
+
+[popover] {
+  padding: 4rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  opacity: 0;
+  rotate: 90deg;
+  transition: 0.5s allow-discrete;
+  border-radius: 10px;
+  line-height: 2rem;
+  border: none;
+
+  button {
+    position: sticky;
+    top: 0;
+    justify-self: end;
+  }
+
+  &:popover-open {
+    display: grid;
+  }
+
+  &::backdrop {
+    background: #0008;
+  }
+}
+
+:popover-open {
+  opacity: 1;
+  rotate: none;
+  @starting-style {
+    opacity: 0;
+    rotate: 90deg;
+  }
 }
