@@ -6,7 +6,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  margin: 0;
+  /*margin: 0;*/
   padding: 0;
 }
 
@@ -33,6 +33,11 @@ svg {
   height: auto;
 }
 
+.logoinfo {
+  padding: 50px;
+  margin-top: 5px;
+}
+
 label {
   display: block;
 }
@@ -43,10 +48,17 @@ textarea,
 select {
   font: inherit;
   color: inherit;
-  background-color: transparent;
+  border-radius: 10px;
   font-size: max(1em, 16px);
-  padding: 0;
-  margin: 0;
+}
+
+button {
+  padding: 16px;
+  justify-self: center;
+  border: none;
+  background-color: #a31c16;
+  color: white;
+  margin-top: 10px;
 }
 
 input:where([type="checkbox"], [type="radio"]) {

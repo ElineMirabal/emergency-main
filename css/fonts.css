@@ -24,3 +24,10 @@
   font-weight: var(--font-weight-medium);
   font-style: normal;
 }
+
+.hedvig-letters-serif {
+  font-family: "Hedvig Letters Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
